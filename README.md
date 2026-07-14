@@ -1,173 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday, Little ❤️</title>
+# 🎂 Little Sis Birthday Surprise 💖
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
+A cute birthday surprise website created with love for my little sister ✨
 
-body{
-overflow:hidden;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:linear-gradient(-45deg,#4b006e,#ff4fa3,#6f42c1,#ff9a9e);
-background-size:400% 400%;
-animation:bgMove 12s infinite ease;
-}
+## 🌸 About This Project
 
-@keyframes bgMove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
+This is a special birthday wishing website made to bring a smile to my sister's face on her special day.
 
-.card{
-width:90%;
-max-width:420px;
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(12px);
-padding:25px;
-border-radius:25px;
-text-align:center;
-color:white;
-box-shadow:0 0 30px rgba(255,255,255,.25);
-}
+## 💕 Features
 
-h1{
-font-size:35px;
-margin-bottom:10px;
-}
+- 🎉 Birthday wishes
+- 💖 Cute animations
+- 🌸 Beautiful design
+- ✨ A special surprise message
 
-h2{
-font-size:28px;
-color:#ffd700;
-margin-bottom:15px;
-}
+## 🛠️ Built With
 
-p{
-font-size:17px;
-line-height:1.8;
-}
+- HTML
+- CSS
+- JavaScript
 
-button{
-margin-top:25px;
-padding:14px 30px;
-border:none;
-border-radius:30px;
-background:#ffffff;
-color:#ff2d75;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
-}
+## 🎁 Made With Love
 
-#letter{
-display:none;
-margin-top:20px;
-font-size:18px;
-animation:fade 1s;
-}
+Created specially for my little sister ❤️
 
-@keyframes fade{
-from{opacity:0;transform:translateY(20px);}
-to{opacity:1;transform:translateY(0);}
-}
-
-.float{
-position:absolute;
-bottom:-50px;
-font-size:28px;
-animation:fly linear infinite;
-}
-
-@keyframes fly{
-0%{
-transform:translateY(0);
-opacity:1;
-}
-100%{
-transform:translateY(-120vh);
-opacity:0;
-}
-}
-</style>
-
-</head>
-
-<body>
-
-<div class="card">
-
-<h1>🎂 Happy Birthday 🎂</h1>
-
-<h2>Little ❤️</h2>
-
-<p>
-To the most wonderful sister in the world... 🌸<br><br>
-
-Your smile lights up every room, your kindness makes life beautiful, and your happiness means so much to me.
-
-May your birthday be filled with laughter, love, unforgettable memories, and every dream you've wished for.
-
-You deserve all the happiness in the world. 💖
-</p>
-
-<button onclick="surprise()">🎁 Open Your Surprise</button>
-
-<div id="letter">
-✨ Happy Birthday, Little! ✨<br><br>
-
-No matter what happens in life, I'll always be there for you.
-
-You are not just my sister, you are my best friend and my biggest blessing.
-
-❤️ Love You Forever ❤️
-</div>
-
-</div>
-
-<script>
-
-function surprise(){
-
-document.getElementById("letter").style.display="block";
-
-let emoji=["💖","🎈","✨","🎂","🌸","💕","🎉"];
-
-for(let i=0;i<120;i++){
-
-let e=document.createElement("div");
-
-e.className="float";
-
-e.innerHTML=emoji[Math.floor(Math.random()*emoji.length)];
-
-e.style.left=Math.random()*100+"vw";
-
-e.style.animationDuration=(3+Math.random()*4)+"s";
-
-e.style.fontSize=(20+Math.random()*20)+"px";
-
-document.body.appendChild(e);
-
-setTimeout(()=>{
-e.remove();
-},7000);
-
-}
-
-}
-
-</script>
-
-</body>
-</html>
+Happy Birthday! 🎂✨
